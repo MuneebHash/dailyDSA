@@ -1,7 +1,7 @@
 package Patterns;
 public class Patterns {
     
-    public void  p11(int n){
+    public void p11(int n){
         for (int i = 0; i < n; i++){
             int start = 0;
             if (i % 2 == 0){
@@ -14,7 +14,6 @@ public class Patterns {
             System.out.println();   
         }
     }
-
     public void p12(int n){
         for (int i = 1; i <= n; i++){
             for (int j = 1; j <= i; j++){
@@ -28,8 +27,7 @@ public class Patterns {
             }
             System.out.println();
         }
-    }
-    
+    } 
     public void p13(int n){
         int start = 1;
         for (int i = 0; i < n; i++){
@@ -40,7 +38,6 @@ public class Patterns {
             System.out.println();
         }
     }
-
     public void p14(int n){
         char startChar = 'A';
         for (int i = 0; i < n; i++){
@@ -124,7 +121,6 @@ public class Patterns {
             System.out.println();
         }    
     }
-
     public void p20(int n){
         for(int i = 0; i < n; i ++){
             for(int j = 0; j <= i; j ++){
@@ -151,7 +147,21 @@ public class Patterns {
             System.out.println();
         }
     }
+    public void p21(int n){
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                if (i == 0 || i == n - 1 || j == 0 || j == n -1 ){
+                    System.out.print("*");
+                } else System.out.print(" ");
+                    
+            }
+            System.out.println();
+        }
+
+    }
     
+
+
     public static void main(String[] args) {
         Patterns obj = new Patterns();
 
@@ -164,7 +174,7 @@ public class Patterns {
         //obj.p17(5);
         //obj.p18(8);
         //obj.p19(5);
-        obj.p20(5);
-        
+        //obj.p20(5);
+        obj.p21(5);
     }
 }
