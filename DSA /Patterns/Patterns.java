@@ -159,8 +159,21 @@ public class Patterns {
         }
 
     }
-    
+    public void p22(int n){
+        for(int i = 0; i < (2*n) - 1; i++){
+            for(int j = 0; j < (2*n) - 1; j++){
+                int right = 2*n - 2 - j;
+                int left = j;
+                int top = i;
+                int bottom = 2*n - 2 - i;
 
+                int printVal = n - Math.min(Math.min(top, bottom), Math.min(left, right));
+                System.out.print(printVal);
+
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args) {
         Patterns obj = new Patterns();
@@ -175,6 +188,7 @@ public class Patterns {
         //obj.p18(8);
         //obj.p19(5);
         //obj.p20(5);
-        obj.p21(5);
+        //obj.p21(5);
+        obj.p22(4);
     }
 }
