@@ -176,7 +176,7 @@ public class Patterns {
     }
 
     public static void main(String[] args) {
-        Patterns obj = new Patterns();
+        //Patterns obj = new Patterns();
 
         //obj.p11(5);
         //obj.p12(4);
@@ -189,6 +189,6 @@ public class Patterns {
         //obj.p19(5);
         //obj.p20(5);
         //obj.p21(5);
-        obj.p22(4);
+        //obj.p22(4);
     }
 }
