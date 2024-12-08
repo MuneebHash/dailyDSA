@@ -8,7 +8,7 @@ public class FactorialToN {
         
     }
     public static void main(String[] args) {
-        FactorialToN obj = new FactorialToN();
+        //FactorialToN obj = new FactorialToN();
         
     }
 }

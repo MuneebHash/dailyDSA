@@ -56,12 +56,44 @@ public class Sort {
         }
     }    
     
-    
+    public void mergeSort(int[] arr, int left, int right){
+        if (left < right){
+            int mid = (right - left)/2 + left;
+
+            mergeSort(arr, left, mid); // First half of the array, the left half.
+            mergeSort(arr, mid + 1, right); // Second half of the array, the right half.
+            
+            merge(arr, left, mid, right); // Merge when it has reached to the single value in Array.   
+        }
+    }
+    public void merge(int[] arr, int left, int mid, int right){
+        int n1 = mid - left + 1; // + 1 is bcz we want to add the mid value in the left array.
+        int n2 = right - mid;
+
+        int[] leftArr = Arrays.copyOfRange(arr, left, mid+1); 
+        int[] rightArr = Arrays.copyOfRange(arr, mid+1, right + 1);
+
+        int i = 0; int j = 0; int k = left;
+        
+        while (i < n1 && j < n2) {
+            if (leftArr[i] <= rightArr[j]){
+                arr[k++] = leftArr[i++];
+            } else{
+                arr[k++] = rightArr[j++];
+            }
+        }
+        while (i < n1) {
+            arr[k++] = leftArr[i++];
+        }
+        while (j < n2) {
+            arr[k++] = rightArr[j++];
+        }
+    }
     
     public static void main(String[] args) {
         Sort obj = new Sort();
-        int[] arr = {23, 45, 2 ,3 ,53};
-        obj.quicksort(arr, 0, arr.length - 1);
+        int[] arr = {23, 45, 2 ,3 ,53, 100, 43, 265, 23, 1, 6};
+        obj.mergeSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }   
 }
