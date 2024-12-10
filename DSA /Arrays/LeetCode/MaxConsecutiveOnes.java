@@ -1,5 +1,10 @@
 package Arrays.LeetCode;
-import java.util.Arrays;
+
+/* 
+ * LeetCode Question #485
+ * Difficulty : Easy.
+*/
+
 public class MaxConsecutiveOnes {
     public int findMaxConsecutiveOnes(int[] nums) {
         int count = 0;
@@ -18,7 +23,7 @@ public class MaxConsecutiveOnes {
     }
     public static void main(String[] args) {
         MaxConsecutiveOnes obj = new MaxConsecutiveOnes();
-        int[] arr = {1,1,0,1,1,1};
+        int[] arr = {1,1,1,1,1,1,0,1,1,};
         int n =obj.findMaxConsecutiveOnes(arr);
         System.out.println(n);
     }

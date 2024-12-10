@@ -1,5 +1,9 @@
 package Arrays.LeetCode;
 
+/* 
+ * LeetCode Question #560
+ * Difficulty : Medium.
+*/
 
 public class SubArraySumEqualsK {
     public int subarraySum(int[] nums, int k) {
@@ -18,7 +22,6 @@ public class SubArraySumEqualsK {
         return counter;
         
     }
-
     public static void main(String[] args) {
         SubArraySumEqualsK obj = new SubArraySumEqualsK();
         int[] input = {1, 2, 3};
@@ -26,3 +29,6 @@ public class SubArraySumEqualsK {
         System.out.println(obj.subarraySum(input, key));
     }
 }
+
+
+// RETURN TO THIS QUESTION!

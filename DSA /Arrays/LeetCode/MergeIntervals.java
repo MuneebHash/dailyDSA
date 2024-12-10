@@ -3,6 +3,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/* 
+ * LeetCode Question #56
+ * Difficulty : Medium.
+*/
+
 public class MergeIntervals {
 
     public int[][] selectionSort(int[][] myArray){

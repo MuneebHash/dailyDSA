@@ -1,5 +1,9 @@
 package Arrays.LeetCode;
 
+/* 
+ * LeetCode Question #121
+ * Difficulty : Easy.
+*/
 
 public class BestTimetoBuyandSellStock{
     public int maxProfit(int[] prices) {
@@ -25,7 +29,7 @@ public class BestTimetoBuyandSellStock{
     } 
     public static void main(String[] args) {
         BestTimetoBuyandSellStock bsObj = new BestTimetoBuyandSellStock();
-        int[] array = new int[]{7,1,5,3,6,4};
+        int[] array = {7,1,5,3,6,4};
         System.out.println(bsObj.maxProfit(array));
     }
 }

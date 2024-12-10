@@ -1,6 +1,11 @@
 package Arrays.LeetCode;
 import java.util.Arrays;
-// LeetCode Question No. 238;
+
+/* 
+ * LeetCode Question #238
+ * Difficulty : Medium.
+*/
+
 public class ProductofArrayExceptSelf {
     public int[] productExceptSelf(int[] nums) {
         int length = nums.length;
@@ -16,10 +21,9 @@ public class ProductofArrayExceptSelf {
         }
         return ans;
     }
-
     public static void main(String[] args) {
         ProductofArrayExceptSelf obj = new ProductofArrayExceptSelf();
         int[] input = {1, 2, 3, 4,};
-        System.out.println(Arrays.toString(obj. productExceptSelf(input)));
+        System.out.println(Arrays.toString(obj.productExceptSelf(input)));
     }
 }
