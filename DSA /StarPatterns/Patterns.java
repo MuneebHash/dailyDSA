@@ -1,4 +1,4 @@
-package Patterns;
+package StarPatterns;
 public class Patterns {
     
     public void p11(int n){

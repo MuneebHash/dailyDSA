@@ -35,7 +35,7 @@ public class Search {
     */
 
     public int binarySearch(int[] arr, int key, int low, int high) {
-        if (low > high) {
+        if (low >= high) {
             return -1;
         }
         int mid = low + (high - low) / 2;
