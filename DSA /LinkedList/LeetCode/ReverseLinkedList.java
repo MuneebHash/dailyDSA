@@ -4,9 +4,6 @@ package LinkedList.LeetCode;
  * Difficulty : Easy.
 */
 
-import java.lang.classfile.components.ClassPrinter.ListNode;
-import java.util.LinkedList;
-
 /* Definition for singly-linked list*/
 class Node {
     int val;
