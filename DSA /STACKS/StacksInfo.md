@@ -157,3 +157,31 @@ Using dynamic structures like `ArrayDeque` or `LinkedList` can overcome these li
 
 **Example**: + A B
 
+### Operations
+
+Deque<Integer> Stack/Queue[] = new ArrayDeque<>();
+
+# Stack Operations: (lIFO)
+- **push(E e)** – Pushes an element to the top of the stack.
+- **pop()** – Pops the top element from the stack.
+- **peekFirst()** – Views the top element without removing it (peek the stack).
+- **removeLast()** – Removes and returns the rear element of the queue.
+- **pollLast()** – Removes and returns the rear element, or returns null if the queue is empty.
+
+# Queue Operations:
+- 
+## Front Operations:
+- **addLast(E e)** – Adds an element to the rear of the queue.
+- **removeFirst()** – Removes and returns the front element of the queue.
+- **peekFirst()** – Views the front element without removing it.
+- **pollFirst()** – Removes and returns the front element, or returns null if the queue is empty.
+
+## Rear Operations:
+- **addFirst(E e)** – Adds an element to the front of the queue.
+- **removeLast()** – Removes and returns the rear element of the queue.
+- **peekLast()** – Views the rear element without removing it.
+- **pollLast()** – Removes and returns the rear element, or returns null if the queue is empty.
+
+# Common Operations (Used in Both Stack & Queue):
+- **isEmpty()** – Checks if the deque is empty.
+- **size()** – Returns the number of elements in the deque.
