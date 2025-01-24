@@ -1,16 +1,33 @@
 package BasicMaths;
 
-public class ReverseInteger {
-    public int reverseInt (int n){
-        return 8;
+/*
+ * LeetCode Question : 7
+ * Difficulty: Medium.
+ */
 
-    }
-    
+public class ReverseInteger {
+    public int reverse(int x) {
+        int rev = 0;
+        int y = x;
+        while(y != 0){
+            int digit = y % 10;
+            rev = (rev*10) + digit;
+            // Overflow/underflow checks
+            if (rev > Integer.MAX_VALUE / 10 ||
+                (rev == Integer.MAX_VALUE / 10 && digit > 7)) {
+                return 0; // Overflow
+            }
+            if (rev < Integer.MIN_VALUE / 10 ||
+                (rev == Integer.MIN_VALUE / 10 && digit < -8)) {
+                return 0; // Underflow
+            }
+            y = y / 10;
+        }
+        return rev;
+    }    
     public static void main(String[] args) {
         ReverseInteger obj = new ReverseInteger();
-        obj.reverseInt(-1200);
+        
+        System.out.println(obj.reverse(-189));
     }
 }
-
-
-//DO AT HOME BY 24th NOVEMBER.

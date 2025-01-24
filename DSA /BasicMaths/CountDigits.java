@@ -1,5 +1,21 @@
 package BasicMaths;
 
+/**
+This method calculates the number of digits in the given integer n
+that evenly divide the number n (ignoring zeros in the number).
+A digit "evenly divides" n if n % digit == 0 without leaving a remainder.*
+Example:
+Input: n = 120
+Process: Check each digit:
+Digit 1: 120 % 1 == 0 (counts as 1)
+Digit 2: 120 % 2 == 0 (counts as 1)
+Digit 0: Ignored.
+Output: 2
+*
+@param n The input integer to process.
+@return The count of digits that evenly divide the number n.
+*/
+
 public class CountDigits {
     
     public int evenlyDivides(int n){
