@@ -140,7 +140,7 @@ public class Sort {
     
     public static void main(String[] args) {
         int[] arr = {3, 2, 1, 5};
-        Sort.mergeSort(arr, 0, arr.length - 1);
+        Sort.quicksort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }   
 }

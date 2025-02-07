@@ -29,7 +29,7 @@ public class Search {
     repeating until the target is found or the range is empty. Time complexity: O(log n).
 
     Use Cases:
-    -> earching in large, sorted datasets.
+    -> Searching in large, sorted datasets.
     -> Efficiently finding indices or elements.
     -> Solving problems like finding roots or bounds in sorted ranges.
     */

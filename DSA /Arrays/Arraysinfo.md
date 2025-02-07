@@ -8,7 +8,6 @@
 5. **Static Data Structure**: Size and type are fixed at compile time.
 
 ---
-
 ## How Arrays Work
 - **Memory Layout**: Arrays store elements sequentially in memory.
 - **Access**: Use an index to access elements in constant time (`O(1)`).
